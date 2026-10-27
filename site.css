@@ -2,6 +2,8 @@
 @font-face{font-family:"LINE Seed KR";src:url('/fonts/line-seed-kr-bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
 @font-face{font-family:"LINE Seed JP";src:url('/fonts/line-seed-jp-regular.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
 @font-face{font-family:"LINE Seed JP";src:url('/fonts/line-seed-jp-bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:"BlackBear TW";src:url('/fonts/blackbear-tw-regular.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap;ascent-override:93.2%;descent-override:16.8%;line-gap-override:0%}
+@font-face{font-family:"BlackBear TW";src:url('/fonts/blackbear-tw-bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap;ascent-override:93.2%;descent-override:16.8%;line-gap-override:0%}
 
 /* Primitives: the developer's night and the two games' own palettes. */
 :root{
@@ -73,6 +75,7 @@ body{
 html{scroll-behavior:auto}
 body{margin:0;background:var(--section-bg);color:var(--section-text);font-family:"LINE Seed KR",sans-serif;font-size:var(--t-body);line-height:1.65;word-break:keep-all;overflow-wrap:break-word}
 html:lang(ja) body,section[lang="ja"]{font-family:"LINE Seed JP","LINE Seed KR",sans-serif;word-break:normal;line-break:strict}
+html:lang(zh-TW) body,[lang="zh-TW"]{font-family:"BlackBear TW","LINE Seed KR",sans-serif;word-break:normal;line-break:strict}
 ::selection{background:var(--gold);color:var(--ink)}
 a{display:inline-flex;align-items:center;min-width:44px;min-height:44px;max-width:100%;color:inherit;text-underline-offset:.24em;text-decoration-thickness:.09em;touch-action:manipulation;transition:transform 160ms var(--ease-out)}
 a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
